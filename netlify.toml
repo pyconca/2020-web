@@ -1,0 +1,31 @@
+# Settings in the [build] context are global and are applied to all contexts
+# unless otherwise overridden by more specific contexts.
+[build]
+    base = "."
+    publish = "./app/."
+    command = "gulp build"
+
+[build.environment]
+    BUILD_TOKEN = "PYCON-CA!!"
+    DEBUG_MODE = "False"
+
+
+# Production context: all deploys from the Production branch set in your site's
+# deploy contexts will inherit these settings.
+[context.production]
+    publish = "./app/."
+
+[context.production.environment]
+    BUILD_TOKEN = "PYCON-CA!!"
+    DEBUG_MODE = "False"
+
+
+# Deploy Preview context: all deploys generated from a pull/merge request will
+# inherit these settings.
+[context.deploy-preview]
+    publish = "./app/."
+
+[context.deploy-preview.environment]
+    BUILD_TOKEN = "PYCON-CA-PREVIEW!!"
+    DEBUG_MODE = "True"
+
