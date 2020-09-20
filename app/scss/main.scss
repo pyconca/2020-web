@@ -46,6 +46,13 @@
     height: 1.5rem;
 }
 
+.nav-about-us {
+    @extend .text-uppercase;
+    color: #23229C;
+    font-size: $global-font-size;
+    font-weight: bold;
+}
+
 .blue-line {
     background-color: #23229C;
     height: 1rem;
