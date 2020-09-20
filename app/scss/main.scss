@@ -12,6 +12,10 @@
     font-size: $global-font-size;
 }
 
+.buttons-list {
+    font-size: $global-font-size;
+}
+
 .blue-banner {
     @extend .general;
     background-image: url("../images/blue-dots-background.png");
