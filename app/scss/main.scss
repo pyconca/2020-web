@@ -2,3 +2,47 @@
 @import 'utilities';
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import 'angled-edges';
+
+
+.general {
+    padding-left: $text-padding;
+    padding-right: $text-padding;
+    font-size: $global-font-size;
+}
+
+.blue-banner {
+    @extend .general;
+    background-image: url("../images/blue-dots-background.png");
+    color: white;
+    
+}
+
+.banner-pic {
+    margin-left: -15rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    object-fit: contain; 
+    width: 100rem;;
+}
+
+.about-us {
+    @extend .text-uppercase;
+    margin-top: 2rem;
+}
+
+.outside-blue {
+    margin-bottom: 4rem;
+}
+
+
+.yellow-line {
+    background-color: #EDC25D;
+    height: 1.5rem;
+}
+
+.blue-line {
+    background-color: #23229C;
+    height: 1rem;
+}
